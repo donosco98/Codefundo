@@ -1,13 +1,13 @@
 # **MICROSOFT CODEFUNDO 2019**
 
-### * - There are multiple issues with the current election system due to the primitive method of casting and counting votes being active. Given the advent of cryptocurrencies based on blockchain technology, this ideology has gained immense acceleration in application in different fields. We propose a solution for resolving a huge array of issues faced in the current voting system with the help of the blockchain technology.*
+### * - There are multiple issues with the current election system due to the primitive method of casting and counting votes being active. Given the advent of cryptocurrencies based on blockchain technology, this ideology has gained immense acceleration in it's application in different fields. We propose a solution for resolving a huge array of issues faced in the current voting system with the help of the blockchain technology.*
 
 ## ISSUES WE SEEK TO RESOLVE
 1. **SECURITY**:- ***Elections are unfortunately prone to rigging which leads to unfair results. 
 Rigging in election can be done in multiple ways:-***
-	1. 	 Anyone can cast a vote in your name.
-	2. .Fake and duplicate voter I.Ds are being used frequently.
-	3. 	Anyone can tamper with votes that have been cast.
+	1. Anyone can cast a vote in your name.
+	2. Fake and duplicate voter I.Ds are being used frequently.
+	3. Anyone can tamper with votes that have been cast.
 	4. There can be both malpractice and human error in counting votes.
 
 **2. *Time and Resources:- Setting up booths with security and human resources to manage the election is cumbersome and expensive. Counting the votes takes up a lot of effort and is delayed which can cause errors in the result***.
@@ -21,18 +21,26 @@ Rigging in election can be done in multiple ways:-***
 ![BLOCK](https://user-images.githubusercontent.com/31371571/61932789-df274900-afa1-11e9-8400-6cc3146f3f85.png)
 
 ## TECHNOLOGIES TO BE USED
- #### 1. AZURE BLOCKCHAIN
-#### 2. PYTHON-DJANGO
-#### 3. ANGULAR-JAVASCRIPT
-#### 4. WEB3PY AND WEB3JS
-#### 5. SOLIDITY SMART CONTRACT
+#### 1. AZURE BLOCKCHAIN
+#### 2. AZURE COGNITIVE SERVICES COMPUTER VISION FACE API
+#### 3. AADHAAR API
+#### 4. PYTHON-DJANGO
+#### 5. ANGULAR-JAVASCRIPT
+#### 6. WEB3PY AND WEB3JS
+#### 7. SOLIDITY SMART CONTRACT
 
-## OVERVIEW OF THE APP
-### - Each voter will be given a single token to vote 
-### -  An Voters list will be maintained in the blockchain
-### - Each voter will be given by verified by using adhaar, biometric and other useful parameters(if any) before he is  allowed to vote
-### -The voters will be presented with data visualization of the candidates based on their track records and other credential
+## WORKFLOW OF THE APP
+### -  A voters list will be maintained in the blockchain. Anyone above 18 in the list are automatically allowed to vote.
+### - Each eligible voter is now allocated a single token (vote) by the administrator at the start of the election.
+### - To vote, the voter will enter his/her Voter ID's EPIC number. We will use the Aadhaar's voter ID verification API to retrieve the user's details and display it to them for confirmation. We will now, use the Photo ID that the API returns to compare with the user's face for verification (using Azure's Computer Vision Face API).
+### - Before casting the vote, we will present some basic data visualization of factors like promises kept, and attendance etc. based on the dataset the administrator uploads.
+### - Now, the voter can give his/her token to any one candidate (NOTA included) within the constituency they are registered in (not necessarily the constituency they are voting from at that moment).
+### - All of these votes are stored on a blockchain so as to make the voting results immutable. Once the election is over, we will count the votes and display the results immediately.
 
--WE RUN THE USER VERIFICATION AND DATA VISUALIZATION  IN A PYTHON BACKEND SERVER(DJANGO) AND  GIVE THE RESULT VIA REST API TO THE ANGULAR CLIENT SIDE .
-
--SIMILARLY WE CAN PRE-PROCCESS ALL THE DATA IN PYTHON-DJANGO SERVER BEFORE ADDING TO THE SMART-CONTRACT OR BLOCKCHAIN
+## BENEFITS OF SOLUTION
+### - Secure, open and immutable system with the help of blockchain
+### - Automated and easy verification
+### - Counting votes can be completed very fast
+### - Code and process available to public to enhance transparency
+### - Can set up system for a long period so as to let people vote at their convenience
+### - Completely automated process leaving no room for human error or bias
