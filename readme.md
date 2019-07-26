@@ -22,17 +22,16 @@ Rigging in election can be done in multiple ways:-***
 
 ## TECHNOLOGIES TO BE USED
 #### 1. AZURE BLOCKCHAIN
-#### 2. AZURE COGNITIVE SERVICES COMPUTER VISION FACE API
-#### 3. AADHAAR API
-#### 4. PYTHON-DJANGO
-#### 5. ANGULAR-JAVASCRIPT
-#### 6. WEB3PY AND WEB3JS
-#### 7. SOLIDITY SMART CONTRACT
+#### 2. AADHAAR API
+#### 3. PYTHON-DJANGO
+#### 4. ANGULAR-JAVASCRIPT
+#### 5. WEB3PY AND WEB3JS
+#### 6. SOLIDITY SMART CONTRACT
 
 ## WORKFLOW OF THE APP
 ### -  A voters list will be maintained in the blockchain. Anyone above 18 in the list are automatically allowed to vote.
 ### - Each eligible voter is now allocated a single token (vote) by the administrator at the start of the election.
-### - To vote, the voter will enter his/her Voter ID's EPIC number. We will use the Aadhaar's voter ID verification API to retrieve the user's details and display it to them for confirmation. We will now, use the Photo ID that the API returns to compare with the user's face for verification (using Azure's Computer Vision Face API).
+### - To vote, the voter will enter his/her Voter ID's EPIC number. We will use the Aadhaar's voter ID verification API to retrieve the user's details and display it to them for confirmation. We will now, use the Photo ID that the API returns to compare with the user's face for verification.
 ### - Before casting the vote, we will present some basic data visualization of factors like promises kept, and attendance etc. based on the dataset the administrator uploads.
 ### - Now, the voter can give his/her token to any one candidate (NOTA included) within the constituency they are registered in (not necessarily the constituency they are voting from at that moment).
 ### - All of these votes are stored on a blockchain so as to make the voting results immutable. Once the election is over, we will count the votes and display the results immediately.
